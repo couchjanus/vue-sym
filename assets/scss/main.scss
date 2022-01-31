@@ -1,0 +1,153 @@
+@import '~bootstrap';
+
+.reset-anchor {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: #9055A2;
+    }
+}
+
+
+.bg-none {
+    background: none !important
+}
+
+.svg-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+    stroke: currentColor;
+    stroke-width: 3;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    --layer1: currentColor;
+    --layer2: currentColor;
+    --layer3: currentColor
+}
+
+.svg-icon.svg-icon-light {
+    stroke-width: 2
+}
+
+.svg-icon.svg-icon-heavy {
+    stroke-width: 4
+}
+
+.svg-icon-sm {
+    width: 18px;
+    height: 18px
+}
+
+.svg-icon-md {
+    width: 36px;
+    height: 36px
+}
+
+.svg-icon-big {
+    width: 56px;
+    height: 56px
+}
+
+
+.actions-nav-menu {
+    font-size: 1.2rem;
+
+    & .icon-cart {
+        font-size: 1.3rem
+    }
+
+    & .cart-no {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: white;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #9055A2;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        font-weight: 800
+    }
+
+}
+
+.dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(0.5rem);
+    transform: translateY(0.5rem);
+    &.show {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        transition: .2s all
+    }
+}
+
+@media (min-width: 992px) {
+    .dropdown-menu {
+        display: block;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1)
+    }
+}
+
+.dropdown-toggle::after {
+    border: none;
+    content: '\f107';
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    vertical-align: middle;
+    font-size: 0.85rem;
+    margin-left: 0.3rem
+}
+
+.dropdown-item {
+    transition: all 0.2s;
+    display: block;
+    width: 100%;
+    padding: .5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #9055A2;
+    border-color: #9055A2;
+    &:hover {
+        color: #fff !important;
+        background-color: #7a488a;
+        border-color: #734482
+    }
+    &:focus {
+        color: #fff !important;
+        background-color: #7a488a;
+        border-color: #734482;
+        box-shadow: 0 0 0 .25rem rgba(161, 111, 176, 0.5)
+    }
+}
+
+.no-hover:hover,
+.no-hover:focus {
+    background: none !important;
+    color: inherit !important
+}

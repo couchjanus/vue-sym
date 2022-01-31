@@ -1,0 +1,50 @@
+{
+  "hydra:member": [
+    {
+      "@context": "string",
+      "@id": "string",
+      "@type": "string",
+      "id": 0,
+      "name": "string",
+      "description": "string",
+      "products": [
+        {
+          "@context": "string",
+          "@id": "string",
+          "@type": "string",
+          "id": 0,
+          "name": "string",
+          "description": "string",
+          "price": "string",
+          "quantity": 0,
+          "status": true,
+          "brand": "string"
+        }
+      ]
+    }
+  ],
+  "hydra:totalItems": 0,
+  "hydra:view": {
+    "@id": "string",
+    "@type": "string",
+    "hydra:first": "string",
+    "hydra:last": "string",
+    "hydra:previous": "string",
+    "hydra:next": "string"
+  },
+  "hydra:search": {
+    "@type": "string",
+    "hydra:template": "string",
+    "hydra:variableRepresentation": "string",
+    "hydra:mapping": [
+      {
+        "@type": "string",
+        "variable": "string",
+        "property": "string",
+        "required": true
+      }
+    ]
+  }
+}
+
+{"@context":{"@vocab":"http:\/\/127.0.0.1:8001\/api\/docs.jsonld#","hydra":"http:\/\/www.w3.org\/ns\/hydra\/core#","name":"Brand\/name","description":"Brand\/description","products":{"@id":"Brand\/products","@type":"@id"}}}
